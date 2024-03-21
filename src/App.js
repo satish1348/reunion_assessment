@@ -4,7 +4,6 @@ import {ThemeProvider, createTheme} from '@mui/material/styles';
 import { useState } from 'react';
 
 
-
 const App = () => {
     const [users,setUsers]=useState([])
     const columns=[
