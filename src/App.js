@@ -57,8 +57,9 @@ const App = () => {
         color:'skyblue',
 
     };
+
     useEffect(()=>{
-        fetch('http://localhost:3000/sample.json')
+        fetch('sample.json')
         .then((res)=>res.json())
         .then(data=>{
              console.log(data?.users);
