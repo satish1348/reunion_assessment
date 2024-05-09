@@ -2,7 +2,7 @@ import React,{useEffect} from 'react';
 import MUIDataTable from "mui-datatables";
 import {ThemeProvider, createTheme} from '@mui/material/styles';
 import { useState } from 'react';
-
+import { mockData } from './testData';
 
 const App = () => {
     const [users,setUsers]=useState([])
@@ -94,7 +94,7 @@ const App = () => {
       
       <MUIDataTable
         title={"REUNION FRONTEND ASSESSMENT"}
-        data={users}
+        data={mockData}
         columns={columns}
         options={options}
 />
